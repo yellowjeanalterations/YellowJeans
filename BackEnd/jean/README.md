@@ -1,0 +1,12 @@
+# YellowJeans BackEnd Server
+- SpringBoot with Kotlin
+- Kotlin - jdk 17
+- Springboot 3.1.2
+    - Spring Security
+        - JWT
+    - JPA
+        - MariaDB
+        - QueryDSL(Option)
+    - JUnit5
+    - logback
+    - Springdoc
