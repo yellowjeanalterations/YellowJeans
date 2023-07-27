@@ -10,9 +10,9 @@ spring:
   profiles:
     active: prod
   datasource:
-    url: jdbc:mysql://localhost:3306/KotlinSpringStudy?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true&characterEncoding=utf8
-    username: yellowjean
-    password: yellowjean
+    url: jdbc:mysql://localhost:3306/YellowJean?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true&characterEncoding=utf8
+    username: yellowRoot
+    password: ypealslsowwoJredan
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     open-in-view: false
