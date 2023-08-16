@@ -11,7 +11,17 @@ import org.slf4j.LoggerFactory
 import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.web.filter.GenericFilterBean
 import java.io.IOException
-
+/**
+ * packageName    : com.yellow.jean.config
+ * fileName       : CustomCorsFilter
+ * author         : iseongmu
+ * date           : 2023/08/14
+ * description    : 인증 관련 필터
+ * ===========================================================
+ * DATE              AUTHOR             NOTE
+ * -----------------------------------------------------------
+ * 2023/08/14        iseongmu       최초 생성
+ */
 class JwtAuthenticationFilter(
     private val jwtTokenProvider: JwtTokenProvider
 ) : GenericFilterBean() {

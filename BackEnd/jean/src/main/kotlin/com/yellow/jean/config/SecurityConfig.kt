@@ -13,7 +13,17 @@ import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.security.web.SecurityFilterChain
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter
 
-
+/**
+ * packageName    : com.yellow.jean.config
+ * fileName       : SecurityConfig
+ * author         : iseongmu
+ * date           : 2023/08/14
+ * description    : Spring Security Configuration
+ * ===========================================================
+ * DATE              AUTHOR             NOTE
+ * -----------------------------------------------------------
+ * 2023/08/14        iseongmu       최초 생성
+ */
 @Configuration
 class SecurityConfig {
     val WEB_WHITE_LIST: Array<String> = arrayOf(
@@ -31,7 +41,7 @@ class SecurityConfig {
         "/favicon.ico",
     )
     val WHITE_LIST: Array<String> = arrayOf("/")
-    val WHITE_LIST_POST: Array<String> = arrayOf("/users/login", "/users/info")
+    val WHITE_LIST_POST: Array<String> = arrayOf("/api/user/login/*", "/api/user/info")
 
     @Autowired
     lateinit var jwtTokenProvider: JwtTokenProvider

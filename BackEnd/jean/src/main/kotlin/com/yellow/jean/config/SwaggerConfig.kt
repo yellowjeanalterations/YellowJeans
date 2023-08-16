@@ -9,7 +9,17 @@ import io.swagger.v3.oas.models.security.SecurityRequirement
 import io.swagger.v3.oas.models.security.SecurityScheme
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
-
+/**
+ * packageName    : com.yellow.jean.config
+ * fileName       : SwaggerConfig
+ * author         : iseongmu
+ * date           : 2023/08/14
+ * description    : Swagger Configuration
+ * ===========================================================
+ * DATE              AUTHOR             NOTE
+ * -----------------------------------------------------------
+ * 2023/08/14        iseongmu       최초 생성
+ */
 @Configuration
 class SwaggerConfig {
     @Bean

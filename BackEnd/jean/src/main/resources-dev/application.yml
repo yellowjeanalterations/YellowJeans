@@ -19,7 +19,7 @@ spring:
     generate-ddl: true
     show-sql: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: create-drop
     properties:
       hibernate:
         format_sql: true
@@ -38,3 +38,15 @@ springdoc:
     display-request-duration: true
     operations-sorter: alpha
     enabled: true
+
+jwt:
+  secret-key: Yn2kjibddFAWtnPJ2AFlL8WXmohJMCvigQggaEypa5E=
+  token-prefix: Bearer
+  header-string: Authorization
+
+oauth:
+  kakao:
+    client-id: a43146847a448fdf87f3f901b2205c46
+    url:
+      auth: https://kauth.kakao.com
+      api: https://kapi.kakao.com

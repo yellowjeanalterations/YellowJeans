@@ -1,16 +1,18 @@
-package com.yellow.jean.domain
+package com.yellow.jean.domain.enums
 /**
- * packageName    : com.yellow.jean.domain
- * fileName       : BaseResponseBody
+ * packageName    : com.yellow.jean.domain.enums
+ * fileName       : Authority
  * author         : iseongmu
  * date           : 2023/08/14
- * description    : Return Object 명시
+ * description    : oAuth 2.0 Provider 주체
  * ===========================================================
  * DATE              AUTHOR             NOTE
  * -----------------------------------------------------------
  * 2023/08/14        iseongmu       최초 생성
  */
-data class BaseResponseBody(
-    val code: Int,
-    val message: String,
-)
+enum class AuthProvider {
+    SELF,
+    KAKAO,
+    NAVER,
+    GOOGLE,
+}

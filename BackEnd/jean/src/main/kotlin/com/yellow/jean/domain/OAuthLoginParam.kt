@@ -1,16 +1,23 @@
 package com.yellow.jean.domain
+
+import com.yellow.jean.domain.enums.AuthProvider
+import org.springframework.util.MultiValueMap
+
+
+
+
 /**
  * packageName    : com.yellow.jean.domain
- * fileName       : BaseResponseBody
+ * fileName       : OAuthLoginParam
  * author         : iseongmu
  * date           : 2023/08/14
- * description    : Return Object 명시
+ * description    :
  * ===========================================================
  * DATE              AUTHOR             NOTE
  * -----------------------------------------------------------
  * 2023/08/14        iseongmu       최초 생성
  */
-data class BaseResponseBody(
-    val code: Int,
-    val message: String,
-)
+interface OAuthLoginParam {
+    fun authProvider(): AuthProvider
+    fun makeBody(): MultiValueMap<String, String>
+}
